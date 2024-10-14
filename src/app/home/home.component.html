@@ -1,9 +1,21 @@
-<header>
-  <app-header></app-header>
-</header>
-<main>
-  <h1>Hello world</h1>
-</main>
-<footer>
-  <app-footer></app-footer>
-</footer>
+<body>
+  <header>
+    <app-header></app-header>
+  </header>
+  <main>
+    <div class="card text-center container my-4">
+      <section class="card-body">
+        <h1 class="card-title">Présentation</h1>
+        <p class="card-text">
+          Bienvenue au petit village, votre boutique
+          spécialisée dans la vente de figurines artisanales inspirées de
+          l'univers d'Astérix.
+        </p>
+        <a [routerLink]="['/about']" class="btn btn-primary">En savoir plus</a>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <app-footer></app-footer>
+  </footer>
+</body>
