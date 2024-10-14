@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Bubbleboddy neue';
+    font-weight: 200;
+    src: url('/assets/fonts/Bubbleboddy-ExtraLightTrial.woff');
+    src: url('/assets/fonts/Bubbleboddy-ExtraLightTrial.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Bubbleboddy neue';
+    font-weight: 900;
+    src: url('/assets/fonts/Bubbleboddy-FatTrial.woff');
+    src: url('/assets/fonts/Bubbleboddy-FatTrial.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Comfortaa';
+    font-weight: 400;
+    src: url('/assets/fonts/Comfortaa-Regular.woff');
+    src: url('/assets/fonts/Comfortaa-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Comfortaa';
+    font-weight: 100;
+    src: url('/assets/fonts/Comfortaa-Light.woff');
+    src: url('/assets/fonts/Comfortaa-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Comfortaa';
+    font-weight: 700;
+    src: url('/assets/fonts/Comfortaa-Bold.woff');
+    src: url('/assets/fonts/Comfortaa-Bold.ttf') format('truetype');
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Bubbleboddy neue', sans-serif;
+}
+header, main, footer{
+    font-family: 'Comfortaa'
+}
