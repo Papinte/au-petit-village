@@ -7,12 +7,27 @@
       <section class="card-body">
         <h1 class="card-title">Présentation</h1>
         <p class="card-text">
-          Bienvenue au petit village, votre boutique
-          spécialisée dans la vente de figurines artisanales inspirées de
-          l'univers d'Astérix.
+          Bienvenue au petit village, votre boutique spécialisée dans la vente
+          de figurines artisanales inspirées de l'univers d'Astérix.
         </p>
         <a [routerLink]="['/about']" class="btn about-btn">En savoir plus</a>
       </section>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-sm-6 col-md-4 col-lg-3"
+          *ngFor="let product of products"
+        >
+          <app-product-card
+            [productImage]="product.image"
+            [productTitle]="product.title"
+            [productDescription]="product.description"
+            [productPrice]="product.price"
+          >
+          </app-product-card>
+        </div>
+      </div>
     </div>
   </main>
   <footer>
