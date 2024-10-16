@@ -1,11 +1,19 @@
 <div class="container produits">
   <div class="card my-5 text-center">
-    <img [src]="productImage" class="img-produit card-img-top" alt="{{ productTitle }}" />
-    <div class="card-body">
-      <p class="h3 card-title">{{ productTitle }}</p>
-      <p class="card-text">{{ productDescription }}</p>
-      <p class="card-text"><span class="prix">{{ productPrice }} €</span></p>
-      <a href="#" class="btn btn-card">Acheter</a>
-    </div>
+    <a [routerLink]="['/product', productTitle]">
+      <img
+        [src]="productImage"
+        class="img-produit card-img-top"
+        alt="{{ productTitle }}"
+      />
+      <div class="card-body">
+        <p class="h3 card-title">{{ productTitle }}</p>
+        <p class="card-text">{{ productDescription }}</p>
+        <p class="card-text">
+          <span class="prix">{{ productPrice }} €</span>
+        </p>
+        <a href="#" class="btn btn-card">Acheter</a>
+      </div>
+    </a>
   </div>
 </div>
