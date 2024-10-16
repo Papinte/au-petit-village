@@ -9,6 +9,8 @@ import { ProductComponent } from './product/product.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProductCardComponent } from './product-card/product-card.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { ContactComponent } from './contact/contact.component';
     ProductComponent,
     HeaderComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [
     provideClientHydration()
