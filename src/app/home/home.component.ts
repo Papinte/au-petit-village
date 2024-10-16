@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../products.service';
+import { faSearch } from '@fortawesome/free-solid-svg-icons'; 
+import { faArrowUpWideShort } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +10,8 @@ import { ProductsService } from '../products.service';
 })
 export class HomeComponent implements OnInit {
   products: any[] = [];
+  faSearch = faSearch;
+  faArrowUpWideShort = faArrowUpWideShort;
 
   constructor(private productsService: ProductsService) {}
 

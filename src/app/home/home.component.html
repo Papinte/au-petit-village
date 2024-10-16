@@ -13,22 +13,41 @@
         <a [routerLink]="['/about']" class="btn about-btn">En savoir plus</a>
       </section>
     </div>
-    <div class="container">
+    <section class="container">
+      <h2 class="my-4 text-center">Catalogue de produits</h2>
+      <div class="d-flex justify-content-end">
+        <form class="d-flex" role="search">
+          <input
+            class="search-input form-control me-2"
+            type="search"
+            placeholder="Recherche"
+            aria-label="Search"
+          />
+          <button class="btn btn-search" type="submit">
+            <fa-icon [icon]="faSearch"></fa-icon>
+          </button>
+        </form>
+        <div class="ms-2">
+          <button class="btn btn-search" type="button">
+            <fa-icon [icon]="faArrowUpWideShort"></fa-icon>
+          </button>
+        </div>
+      </div>
+
       <div class="row">
         <div
-          class="col-sm-6 col-md-4 col-lg-6"
+          class="col-sm-8 col-md-6 col-lg-4"
           *ngFor="let product of products"
         >
           <app-product-card
             [productImage]="product.image"
             [productTitle]="product.title"
-            [productDescription]="product.description"
             [productPrice]="product.price"
           >
           </app-product-card>
         </div>
       </div>
-    </div>
+    </section>
   </main>
   <footer>
     <app-footer></app-footer>
