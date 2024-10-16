@@ -1,0 +1,18 @@
+body {
+  background-color: #f9d0a3;
+}
+.card-about {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 700px;
+}
+.text-important {
+  font-weight: 700;
+  color: #da001e;
+}
+.title-about {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #da001e;
+}
