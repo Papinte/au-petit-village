@@ -12,7 +12,10 @@
     object-fit: contain; /* Recadrer les images pour qu'elles remplissent l'espace tout en gardant les proportions */
     object-position: center;
 }
-
+a{
+    text-decoration: none;
+    color: #000;
+}
 .card-text{
     font-size: 0.8rem;
 }
