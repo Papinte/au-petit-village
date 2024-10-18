@@ -1,8 +1,8 @@
 <header>
   <app-header></app-header>
 </header>
-<main>
-  <div class="card text-center container my-4 col-12 col-md-8 col-lg-12">
+<main class="py-5">
+  <div class="card text-center container col-12 col-md-8 col-lg-12">
     <section class="card-body">
       <h1 class="card-title">Présentation</h1>
       <p class="card-text">
@@ -52,7 +52,8 @@
       </div>
     </div>
     <div *ngIf="filteredProducts.length === 0">
-      <p class="h3 text-center my-5">Aucune figurine trouvée.</p></div>
+      <p class="h3 text-center my-5">Aucune figurine trouvée.</p>
+    </div>
   </section>
 </main>
 <footer>
