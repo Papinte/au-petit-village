@@ -1,6 +1,12 @@
 main{
     background-color: #F9D0A3;
 }
+.produits{
+    transition: transform 0.3s ease;
+}
+.produits:hover{
+    transform: scale(1.05);
+}
 .card{
     border: none;
     border-radius: 20px;

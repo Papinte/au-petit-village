@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   filteredProducts: any[] = []; // Produits filtrés et triés à afficher
   faSearch = faSearch;
   faArrowUpWideShort = faArrowUpWideShort;
+
   sortOrder: 'asc' | 'desc' = 'asc'; // Par défaut, tri croissant
   searchTerm: string = ''; // Terme de recherche
 

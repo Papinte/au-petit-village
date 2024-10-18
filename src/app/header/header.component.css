@@ -2,6 +2,9 @@ nav{
     background-color: #151217;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
+.btn-hamburger{
+    color: #F9D0A3;
+}
 .img-navbar{
     width: 70px;
     height: auto;
