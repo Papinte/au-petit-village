@@ -1,55 +1,60 @@
-<body>
-  <header>
-    <app-header></app-header>
-  </header>
-  <main>
-    <div class="card text-center container my-4">
-      <section class="card-body">
-        <h1 class="card-title">Présentation</h1>
-        <p class="card-text">
-          Bienvenue au petit village, votre boutique spécialisée dans la vente
-          de figurines artisanales inspirées de l'univers d'Astérix.
-        </p>
-        <a [routerLink]="['/about']" class="btn about-btn">En savoir plus</a>
-      </section>
-    </div>
-    <section class="container">
-      <h2 class="my-4 text-center">Catalogue de produits</h2>
-      <div class="d-flex justify-content-end">
-        <form class="d-flex" role="search">
-          <input
-            class="search-input form-control me-2"
-            type="search"
-            placeholder="Recherche"
-            aria-label="Search"
-          />
-          <button class="btn btn-search" type="submit">
-            <fa-icon [icon]="faSearch"></fa-icon>
-          </button>
-        </form>
-        <div class="ms-2">
-          <button class="btn btn-search" type="button">
-            <fa-icon [icon]="faArrowUpWideShort"></fa-icon>
-          </button>
-        </div>
-      </div>
-
-      <div class="row">
-        <div
-          class="col-sm-8 col-md-6 col-lg-4"
-          *ngFor="let product of products"
-        >
-          <app-product-card
-            [productImage]="product.image"
-            [productTitle]="product.title"
-            [productPrice]="product.price"
-          >
-          </app-product-card>
-        </div>
-      </div>
+<header>
+  <app-header></app-header>
+</header>
+<main>
+  <div class="card text-center container my-4 col-12 col-md-8 col-lg-12">
+    <section class="card-body">
+      <h1 class="card-title">Présentation</h1>
+      <p class="card-text">
+        Bienvenue au petit village, votre boutique spécialisée dans la vente de
+        figurines artisanales inspirées de l'univers d'Astérix.
+      </p>
+      <a [routerLink]="['/about']" class="btn about-btn">En savoir plus</a>
     </section>
-  </main>
-  <footer>
-    <app-footer></app-footer>
-  </footer>
-</body>
+  </div>
+  <section class="container">
+    <h2 class="my-4 text-center">Catalogue de produits</h2>
+    <div class="d-flex">
+      <form role="search" (submit)="onSearchSubmit($event)">
+        <input
+          class="search-input form-control me-2"
+          type="search"
+          placeholder="Recherche"
+          aria-label="Search"
+          [(ngModel)]="searchTerm"
+          name="search"
+          (input)="updateFilteredProducts()"
+        />
+      </form>
+      <div class="ms-2">
+        <button
+          class="btn btn-search"
+          type="button"
+          (click)="toggleSortOrder()"
+        >
+          <fa-icon [icon]="faArrowUpWideShort"></fa-icon>
+          {{ sortOrder === "asc" ? "croissant" : "décroissant" }}
+        </button>
+      </div>
+    </div>
+
+    <div class="row" *ngIf="filteredProducts.length > 0">
+      <div
+        class="col-sm-8 col-md-6 col-lg-6 col-xl-4"
+        *ngFor="let product of filteredProducts"
+      >
+        <app-product-card
+          [productImage]="product.image"
+          [productTitle]="product.title"
+          [productPrice]="product.price"
+        >
+        </app-product-card>
+      </div>
+    </div>
+    <div *ngIf="filteredProducts.length === 0">
+      <p class="h3 text-center my-5">Aucune figurine trouvée.</p></div>
+  </section>
+</main>
+<footer>
+  <app-footer></app-footer>
+</footer>
