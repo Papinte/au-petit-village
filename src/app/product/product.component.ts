@@ -17,8 +17,9 @@ export class ProductComponent implements OnInit {
 
   ngOnInit(): void {
     const productTitle = this.route.snapshot.paramMap.get('title'); // Récupère le paramètre title
-    this.product = this.productsService
-      .getProducts()
-      .find(p => p.title === productTitle); // Cherche le produit par son title
+    
+    this.productsService.getProducts().subscribe((products) => {
+      this.product = products.find(p => p.title === productTitle); // Cherche le produit par son titre
+    });
   }
 }

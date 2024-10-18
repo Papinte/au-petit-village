@@ -1,31 +1,29 @@
-<body>
-  <header>
-    <app-header></app-header>
-  </header>
-  <main class="container">
-    <div class="card my-5">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img
-            [src]="product?.image"
-            class="img-fluid rounded-start"
-            alt="{{ product?.title }}"
-          />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <p class="h3 card-title mb-3">{{ product?.title }}</p>
-            <p class="card-text mb-3">{{ product?.description }}</p>
-            <p class="card-text mb-3">
-              <strong>{{ product?.price }} €</strong>
-            </p>
-            <button class="btn btn-product">Acheter</button>
-          </div>
+<header>
+  <app-header></app-header>
+</header>
+<main class="container">
+  <div class="card my-5">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img
+          [src]="product?.image"
+          class="img-fluid rounded-start"
+          alt="{{ product?.title }}"
+        />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <p class="h3 card-title mb-3">{{ product?.title }}</p>
+          <p class="card-text mb-3">{{ product?.description }}</p>
+          <p class="card-text mb-3">
+            <strong>{{ product?.price }} €</strong>
+          </p>
+          <button class="btn btn-product">Acheter</button>
         </div>
       </div>
     </div>
-  </main>
-  <footer>
-    <app-footer></app-footer>
-  </footer>
-</body>
+  </div>
+</main>
+<footer>
+  <app-footer></app-footer>
+</footer>

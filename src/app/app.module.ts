@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SortByPricePipe } from './pipes/sort-by-price.pipe';
+import { FilterByNamePipe } from './pipes/filter-by-name.pipe';
 
 @NgModule({
   declarations: [
@@ -21,11 +24,14 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HeaderComponent,
     FooterComponent,
     ContactComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    SortByPricePipe,
+    FilterByNamePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     FontAwesomeModule
   ],
   providers: [
