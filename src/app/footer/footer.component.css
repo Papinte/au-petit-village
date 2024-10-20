@@ -1,11 +1,11 @@
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #FDD90B;
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fdd90b;
 }
 
-img{
-    width: 25px;
-    margin: 10px;
+img {
+  width: 25px;
+  margin: 10px;
 }

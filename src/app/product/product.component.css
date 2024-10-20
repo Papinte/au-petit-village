@@ -1,15 +1,15 @@
-main{
-    background-color: #F9D0A3;
+main {
+  background-color: #f9d0a3;
 }
-.card{
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.btn-product{
-    background-color: #FDD90B;
+.btn-product {
+  background-color: #fdd90b;
 }
-.btn-product:hover{
-    background-color: #DA001E;
-    color: #fff;
+.btn-product:hover {
+  background-color: #da001e;
+  color: #fff;
 }

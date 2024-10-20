@@ -1,39 +1,39 @@
-main{
-    background-color: #F9D0A3;
+main {
+  background-color: #f9d0a3;
 }
-.produits{
-    transition: transform 0.3s ease;
+.produits {
+  transition: transform 0.3s ease;
 }
-.produits:hover{
-    transform: scale(1.05);
+.produits:hover {
+  transform: scale(1.05);
 }
-.card{
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-h1{
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-decoration-color: #DA001E;
+h1 {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #da001e;
 }
-h2{
-    text-decoration: underline;
-    font-weight: 900;
+h2 {
+  text-decoration: underline;
+  font-weight: 900;
 }
-.about-btn{
-    background-color: #FDD90B;
+.about-btn {
+  background-color: #fdd90b;
 }
-.about-btn:hover{
-    background-color: #F9D0A3;
+.about-btn:hover {
+  background-color: #f9d0a3;
 }
-.btn-search{
-    background-color: #FDD90B;
+.btn-search {
+  background-color: #fdd90b;
 }
-.btn-search:hover{
-    background-color: #DA001E;
-    color: #fff;
+.btn-search:hover {
+  background-color: #da001e;
+  color: #fff;
 }
-.search-input{
-    width: 300px;
+.search-input {
+  width: 300px;
 }

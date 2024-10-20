@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'filterByName',
-  pure: false // Pour qu'il se mette à jour à chaque changement
+  pure: false, // Pour qu'il se mette à jour à chaque changement
 })
 export class FilterByNamePipe implements PipeTransform {
   transform(products: any[], searchTerm: string): any[] {
@@ -12,8 +12,8 @@ export class FilterByNamePipe implements PipeTransform {
 
     const lowercasedTerm = searchTerm.toLowerCase();
 
-    return products.filter(product =>
-      product.title.toLowerCase().includes(lowercasedTerm) // Filtrer par titre
+    return products.filter(
+      (product) => product.title.toLowerCase().includes(lowercasedTerm) // Filtrer par titre
     );
   }
 }
