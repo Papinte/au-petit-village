@@ -1,33 +1,39 @@
-main{
-    background-color: #F9D0A3;
+main {
+  background-color: #f9d0a3;
 }
-.card{
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.produits {
+  transition: transform 0.3s ease;
 }
-h1{
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-decoration-color: #DA001E;
+.produits:hover {
+  transform: scale(1.05);
 }
-h2{
-    text-decoration: underline;
-    font-weight: 900;
+.card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.about-btn{
-    background-color: #FDD90B;
+h1 {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #da001e;
 }
-.about-btn:hover{
-    background-color: #F9D0A3;
+h2 {
+  text-decoration: underline;
+  font-weight: 900;
 }
-.btn-search{
-    background-color: #FDD90B;
+.about-btn {
+  background-color: #fdd90b;
 }
-.btn-search:hover{
-    background-color: #DA001E;
-    color: #fff;
+.about-btn:hover {
+  background-color: #f9d0a3;
 }
-.search-input{
-    width: 300px;
+.btn-search {
+  background-color: #fdd90b;
+}
+.btn-search:hover {
+  background-color: #da001e;
+  color: #fff;
+}
+.search-input {
+  width: 300px;
 }

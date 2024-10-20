@@ -1,14 +1,17 @@
-nav{
-    background-color: #151217;
+nav {
+  background-color: #151217;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
-.img-navbar{
-    width: 70px;
-    max-width: 100%;
-    height: auto;
+.btn-hamburger {
+  color: #f9d0a3;
 }
-.nav-link{
-    color: #F9D0A3;
+.img-navbar {
+  width: 70px;
+  height: auto;
 }
-.nav-link:hover{
-    color: #FDD90B;
+.nav-link {
+  color: #f9d0a3;
+}
+.nav-link:hover {
+  color: #fdd90b;
 }

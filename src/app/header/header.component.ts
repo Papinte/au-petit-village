@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -7,5 +8,6 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  faBars = faBars;
 
 }
